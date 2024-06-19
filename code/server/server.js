@@ -6,7 +6,7 @@ import mongoose from 'mongoose';
 const app = express();
 
 // Connect to DB (Should move to env/property file if deploying)
-const dbURL = "mongodb+srv://dudes01:7LZQjgVx3dPKoxkh@cluster0.oms8qj2.mongodb.net/?retryWrites=true&w=majority";
+const dbURL = "<DB URL>";
 const client = await MongoClient.connect(dbURL, { useUnifiedTopology: true });
 let db = client.db("databaseproject");
 
